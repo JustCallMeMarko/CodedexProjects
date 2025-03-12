@@ -17,7 +17,8 @@ def triangle():
     Base = int(input("Base: "))
 
     area = (Height*Base)/2
-    print(f"\nThe area is {area:.2f}")
+    print()
+    print(f"The area is {area:.2f}")
 
 def rectangle():
     print()
@@ -25,26 +26,29 @@ def rectangle():
     Width = int(input("Width: "))
 
     area = Length * Width
-    print(f"\nThe area is {area:.2f}")
+    print()
+    print(f"The area is {area:.2f}")
 
 def square():
     print()
     Side = int(input("Side: "))
 
     area = Side**2
-    print(f"\nThe area is {area:.2f}")
+    print(f"The area is {area:.2f}")
 
 def circle():
     print()
     Radius = int(input("Radius: "))
 
     area = pi*(Radius**2)
-    print(f"\nThe area is {area:.2f}")
+    print()
+    print(f"The area is {area:.2f}")
 
 def main():
     while True:
         Menu()
-        shape = input("\nWhich shape: ")
+        print()
+        shape = input("Which shape: ")
         match(shape.lower()):
             case "triangle":
                 triangle()
